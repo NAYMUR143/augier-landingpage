@@ -1,0 +1,638 @@
+.font-ramaraja {
+  @import url("https://fonts.googleapis.com/css2?family=Ramaraja&display=swap");
+  font-family: "Ramaraja", serif;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/Helvetica.ttf);
+}
+:root {
+  --blck: #000000;
+  --wht: #ffffff;
+  --gry: #8d8d8d;
+  --txtclr: #353535;
+  --prtxt: #939393;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+  overflow-x: hidden;
+}
+body img {
+  width: 100%;
+}
+
+.ancbtn {
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  background: var(--blck);
+  color: var(--wht);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  border: 2px solid var(--blck);
+  position: relative;
+  transition: 0.3s;
+}
+.ancbtn::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  border: 1px solid var(--wht);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+.ancbtn:hover {
+  background: var(--wht);
+  color: var(--blck);
+}
+
+.hrsection {
+  width: 100%;
+  height: 100%;
+  padding: 140px 0px;
+  display: flex;
+  align-items: center;
+}
+.hrsection h1 {
+  color: var(--txtclr);
+  font-size: 3.75em;
+  font-weight: 700;
+  line-height: 110%;
+}
+.hrsection p {
+  color: var(--gry);
+  font-size: 1.5em;
+  width: 80%;
+  line-height: 110%;
+  padding: 20px 0px;
+}
+
+.row {
+  width: 100%;
+}
+
+.mdl {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.mdl model-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.vrtalspaces {
+  background: var(--blck);
+  padding: 65px 0px;
+}
+
+.padng {
+  padding: 0px 0px 60px;
+}
+
+.vrtlhd span {
+  color: #525252;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+.vrtlhd h1 {
+  color: var(--wht);
+  font-weight: 600;
+  padding: 16px 0px 28px;
+  font-size: 2.8em;
+}
+.vrtlhd p {
+  font-size: 1.9em;
+  line-height: 100%;
+  color: var(--prtxt);
+  font-weight: 600;
+}
+
+.vrtlbtn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+}
+.vrtlbtn .vrbutton {
+  text-decoration: none;
+  padding: 12px 40px;
+  background: var(--wht);
+  color: var(--blck);
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.cimg {
+  position: relative;
+  width: 100%;
+  height: 325px;
+}
+.cimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+  -o-object-position: right;
+     object-position: right;
+}
+.cimg .vrbtn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: #aaaaaa;
+  padding: 7px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--wht);
+}
+
+.cardtxt {
+  color: var(--wht);
+  padding: 35px 0px 10px;
+}
+.cardtxt h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  line-height: 100%;
+}
+.cardtxt p {
+  color: var(--gry);
+  font-weight: 600;
+}
+
+.srvftr {
+  padding-top: 30px;
+}
+.srvftr h1 {
+  font-size: 3.2em;
+  color: var(--wht);
+  font-weight: 600;
+}
+.srvftr p {
+  font-size: 1.1em;
+}
+.srvftr .lstsc {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 18px 2px 0px;
+}
+.srvftr .lstsc span {
+  font-size: 2.6em;
+  font-weight: 600;
+  color: var(--wht);
+  opacity: 0.4;
+  letter-spacing: -0.024em;
+}
+
+.agrdx {
+  padding: 60px 0px;
+}
+.agrdx .agrhd {
+  padding-bottom: 15px;
+}
+.agrdx .agrhd h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  color: #404040;
+}
+.agrdx .agrhd h1:last-child {
+  color: var(--blck);
+  font-size: 2.8em;
+  opacity: 0.4;
+  margin-top: 15px;
+}
+.agrdx .agrdtxt {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+.agrdx .agrdtxt p {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 110%;
+  text-align: left;
+  margin-right: auto;
+  color: var(--prtxt);
+}
+.agrdx .dblck {
+  display: block;
+  padding-right: 27px;
+}
+.agrdx .gp {
+  padding: 50px 0px;
+}
+.agrdx .pdimg {
+  padding-right: 30px;
+}
+
+.vrtalspaces .row > * {
+  padding: 0px;
+}
+
+.gape {
+  padding-right: 40px !important;
+}
+
+.rstrwrksc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 110px;
+}
+.rstrwrksc .rstrwrp h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--blck);
+  padding: 15px 0px;
+}
+.rstrwrksc .rstrwrp p {
+  color: #8d8d8d;
+  font-weight: 600;
+}
+.rstrwrksc img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.rgstlte h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: var(--blck);
+  padding: 10px 0px 30px;
+}
+
+.rgsbtn {
+  font-size: 1.3em;
+  margin: 10px 0px;
+  padding: 16px 38px;
+}
+.rgsbtn svg {
+  margin-right: 15px;
+}
+
+.acrdain h1 {
+  font-weight: 700;
+  color: var(--blck);
+  font-size: 2.2em;
+  padding: 90px 0px 25px;
+}
+
+.acrdain .accordion-item {
+  margin-top: 5px;
+}
+
+.acrdain p {
+  color: #636363;
+  font-weight: 600;
+}
+
+.acrdain h2 {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #636363;
+}
+
+.acrdain .accordion-item {
+  background-color: #fff;
+  border: none;
+  margin: 10px 0px;
+}
+
+.accordion-button::after {
+  background-image: url("../dwnarrow.svg") !important;
+}
+
+.accordion-button:focus {
+  outline: none;
+}
+
+.accordion-button {
+  background: #ececec !important;
+}
+
+.Footer {
+  background: #000000;
+  padding: 60px;
+  color: #fff;
+  margin-top: 80px;
+}
+
+.Footer h2,
+.Footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.flogo {
+  @import url("https://fonts.googleapis.com/css2?family=Ramaraja&display=swap");
+  font-family: "Ramaraja", serif;
+  font-size: 2.4em;
+}
+
+.flogosec {
+  padding: 20px 0px;
+}
+.flogosec h2 {
+  line-height: 70%;
+  font-size: 3.2em;
+}
+.flogosec span {
+  color: #636363;
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 100%;
+}
+.flogosec p {
+  color: #636363;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding-top: 20px;
+}
+
+.flink {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 25px 0px 20px;
+}
+
+.flink .link a {
+  display: block;
+  text-decoration: none;
+  color: #636363;
+  font-weight: 600;
+  padding: 4px 0px;
+}
+
+.flink .link a:hover {
+  color: #bbbbbb;
+}
+
+@media only screen and (max-width: 1200px) {
+  .srvftr .lstsc span {
+    font-size: 2.2em;
+  }
+  .gp {
+    padding: 40px 0px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .cimg {
+    height: 170px;
+  }
+  .agrdx .dblck {
+    padding-right: 0px;
+  }
+  .agrdx .pdimg {
+    padding-right: 0px;
+  }
+  .gp {
+    padding: 20px 0px;
+  }
+  .hrsection h1 {
+    font-size: 2.4em;
+  }
+  .hrsection p {
+    font-size: 1.1em;
+    width: 100%;
+  }
+  .cardtxt {
+    padding: 45px 0px 10px;
+  }
+  .srvftr .lstsc span {
+    font-size: 1.7em;
+  }
+  .srvftr p {
+    padding-bottom: 10px;
+  }
+  .agrdx .row {
+    flex-direction: column-reverse;
+  }
+  .agrdx img {
+    margin: 0px 0px 15px;
+  }
+  .agrdx .row:last-child {
+    flex-direction: column;
+  }
+  .rstrwrksc img {
+    height: 150px;
+  }
+  .rstrwrksc {
+    gap: 40px;
+    margin: 28px 0px;
+  }
+  .rstrwrksc .rstrwrp h1 {
+    font-size: 1.1em;
+  }
+  .rstrwrksc .rstrwrp p {
+    font-size: 0.9em;
+  }
+  .agrdx .agrdtxt p {
+    font-size: 1.5em;
+  }
+  .cardtxt p {
+    font-size: 0.9em;
+  }
+  .cardtxt h2 {
+    font-size: 1.2em;
+  }
+  .vrtlhd h1 {
+    font-size: 2.4em;
+  }
+  .vrtlhd p {
+    font-size: 1.45em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cimg {
+    height: 100%;
+  }
+  .flink {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hrsection {
+    padding: 60px 0px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  .hrsection .ancbtn {
+    position: absolute;
+    bottom: 0px;
+  }
+  .mdl {
+    width: 100%;
+    height: 315px;
+    margin: auto;
+  }
+  .srvftr .lstsc span {
+    font-size: 1.2em;
+  }
+  .agrdx .agrdtxt p {
+    font-size: 1.2em;
+  }
+  .rstrwrksc {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .rstrwrksc img {
+    height: 200px;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .rstrwrksc .rstrwrp h1 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .rstrwrksc .rstrwrp p {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .gape {
+    padding-right: 0px !important;
+  }
+  .vrtalspaces .row > * {
+    padding: 0px 15px;
+  }
+  .font-ramaraja {
+    font-size: 2.5em;
+  }
+  .agrdx {
+    padding: 60px 0px 30px;
+  }
+  .css-hyum1k-MuiToolbar-root {
+    padding-left: 0px !important;
+  }
+  .hrsection {
+    padding: 30px 0px 50px;
+  }
+  .rgstlte h3 {
+    font-size: 1.5em;
+  }
+  .rstrwrksc img {
+    height: 150px;
+  }
+  .agrhd {
+    padding-bottom: 0px;
+  }
+  .cimg .vrbtn {
+    font-size: 0.9em;
+  }
+  .srvftr .lstsc span {
+    font-size: 0.96em;
+  }
+  .srvftr h1 {
+    font-size: 2.12em;
+  }
+  .agrdx .agrhd h1 {
+    font-size: 2.3em;
+  }
+  .agrdx .agrdtxt p {
+    font-size: 1.1em;
+  }
+  .rgsbtn {
+    font-size: 1.1em;
+    padding: 16px 25px;
+  }
+  .acrdain h1 {
+    font-size: 1.5em;
+  }
+  .acrdain h2 {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .srvftr .lstsc {
+    padding: 6px 14px 6px 0px;
+  }
+  .gape {
+    padding-right: 50px !important;
+  }
+  .Cardsc {
+    width: 100%;
+  }
+  .rgsbtn {
+    font-size: 1.7em;
+    margin: 45px 0px 15px;
+    padding: 18px 38px;
+  }
+  .rstrwrksc img {
+    height: 200px;
+  }
+  .rstrwrksc .rstrwrp p {
+    font-size: 1.1em;
+    width: 83%;
+  }
+  .rgstlte h3 {
+    font-size: 2em;
+    padding: 15px 0px 50px;
+  }
+  .rstrwrksc .rstrwrp h1 {
+    font-size: 1.7em;
+    padding: 20px 0px;
+  }
+  .agrdx .agrdtxt p {
+    font-size: 2.45em;
+    width: 88%;
+  }
+  .agrdx .agrhd h1 {
+    font-size: 3.6em;
+  }
+  .srvftr .lstsc {
+    padding: 6px 0px;
+  }
+  .srvftr .lstsc span {
+    font-size: 2.6em;
+  }
+  .hrsection h1 {
+    color: var(--txtclr);
+    font-size: 4.5em;
+  }
+  .hrsection p {
+    font-size: 1.7em;
+    padding: 30px 0px;
+  }
+  .ancbtn {
+    font-size: 1.4em;
+  }
+  .vrtlhd h1 {
+    font-size: 3.7em;
+  }
+  .vrtlhd p {
+    font-size: 2.2em;
+  }
+  .vrtlhd span {
+    font-size: 3em;
+  }
+  .vrtlbtn .vrbutton {
+    font-size: 1.6em;
+  }
+}/*# sourceMappingURL=style.css.map */
